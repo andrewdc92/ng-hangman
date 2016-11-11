@@ -1,11 +1,4 @@
-<!---
-  market: SF,
-  credit: https://github.com/SF-WDI-LABS/angular_hangman_lab
--->
 
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> 
-
-#ngHangman
 
 <pre>
 _________
@@ -18,20 +11,9 @@ _________
 |___                                        hang-man
 </pre>
 
-### Why is this important?
-<!-- framing the "why" in big-picture/real world examples -->
-*This workshop is important because:*
 
-This workshop is a chance to use the skills you've developed so far and play with angular. We'll be making an in-browser [hang-man game](https://en.wikipedia.org/wiki/Hangman_(game)).
-
-### What are the objectives?
-<!-- specific/measurable goal for students to achieve -->
-*After this workshop, developers will be able to:*
-
- * Get user input with `ng-model`
- * Organize code with `ng-controller`
- * Visualize a collection with `ng-repeat`
- * Fire an event with `ng-change`
+### Objectives
+  Build a front-end application that follows the logic of hangman. A "secret word" is set in the code that is unrevealed to the user. The developer sets the word and the alloted number of guesses. 
 
 ### Where should we be now?
 <!-- call out the skills that are prerequisites -->
@@ -113,4 +95,3 @@ Accomplish the following features on your own or in a pair. User can...
 * restart the game after win/lose
 * keep score of games won and lost
 * see a drawing of the hangman as the game progresses (extra bonus)
-
