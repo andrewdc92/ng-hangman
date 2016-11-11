@@ -9,6 +9,7 @@ var HmGame = function(secretWord, tries) {
   this.gameWon = null;
 };
 
+
 // user can guess a letter
 HmGame.prototype.guess = function(guess) {
   if (this.gameWon !== null) {
