@@ -7,7 +7,7 @@ app.controller("hangmanCtrl", hangmanCtrl )
 // defines the controller, we do the "view/model" pattern
 function hangmanCtrl(){
   var vm = this;
-  vm.game = new HmGame("eloquent", 10);
+  vm.game = new HmGame("obfuscated", 10);
   vm.guessLetter = function() {
     vm.game.guess(vm.input)
     vm.input = "";

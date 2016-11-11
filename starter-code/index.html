@@ -5,7 +5,7 @@
   <title>Hangman Game</title>
   <meta charset="utf8" />
   <link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/main.css" />
   <script src="bower_components/angular/angular.min.js"></script>
   <script src="js/hangman.js"></script>
   <script src="js/app.js"></script>
@@ -13,8 +13,8 @@
 
 <body class="full-background">
 <div class='container' id="container" ng-controller= "hangmanCtrl as hang">
-      <!-- /* Must rename ng-controller in vm format to work! -->
-  <div id='poor-soul' class='row'>
+        <!-- Must rename ng-controller in vm format to work! -->
+  <div id='retro-graphic' class='row'>
     <pre class='col-md-6 col-md-offset-3'>
 _________
 |/      |                               _
@@ -26,17 +26,21 @@ _________
 |___                                        hang-man
 
     </pre>
+    <div id="triesRm">
     <div class='col-sm-12 col-md-6 col-md-offset-3 text-center'>
        {{ hang.game.triesRemaining }} tries remaining
     </div>
+  </div>
   </div>
   <div class='row'>
     <div class='col-sm-12 text-center'>
       <span class="label label-default">SOLVING: </span>
     </div>
+  <div id="test">
     <div class='col-sm-12 text-center'>
       <span class='wide'>{{ hang.game.completedWord }}</span>
     </div>
+  </div>
   </div>
 
   <div class='row'>
@@ -53,14 +57,16 @@ _________
       <span class="label label-default">INPUT:</span>
     </div>
     <div class="col-sm-12 text-center">
-      <input ng-model = "hang.input" ng-change = "hang.guessLetter(input)" type='text' size='1' id='guess' autofocus>
+      <input ng-model = "hang.input" ng-change = "hang.guessLetter(input)" type='text' size='2' id='guess' autofocus>
     </div>
   </div>
-  <div class='row' id='statuses'>
-    <div class='col-sm-1 table small-font'>Win status:
-      <span class='glyphicon' ng-class= "hang.game.gameWon ? 'glyphicon-ok': 'glyphicon-remove'"></span><br><br><br>
-      <button type="button" class="btn btn-danger" onClick="window.location.reload()">Start Over</button>
-
+  <br>
+<center><div class='row' id='statuses'>
+    <div id="winStatus">
+      <div class='col-sm-1 table small-font'>Win status:
+        <span class='glyphicon' ng-class= "hang.game.gameWon ? 'glyphicon-ok': 'glyphicon-remove'"></span><br><br><br>
+        <button type="button" class="btn btn-danger" onClick="window.location.reload()">Start Over</button>
+      </div>
     </div>
   </div>
 </div>

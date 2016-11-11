@@ -9,3 +9,9 @@ body { font-size: 32px; }
   font-size: 14px;
   vertical-align: middle;
 }
+body {
+  background-color: black;
+}
+#triesRm, #compWord, #test, #winStatus {
+  color: white;
+}

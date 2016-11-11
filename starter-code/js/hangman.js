@@ -67,6 +67,13 @@ HmGame.prototype.isWinner = function() {
   } else {
     this.gameWon = null;
   }
+  // if (this.gameWon = true;) {
+  // var currentColor = 'red';
+  // setInterval(function() {
+  //     document.body.style.backgroundColor = currentColor;
+  //     currentColor = currentColor === 'red' ? 'green' : 'yellow';
+  // }, 1000);
+  // }
 };
 
 // returns true if the letter is in the word, false if not
